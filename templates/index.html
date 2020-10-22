@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-image: url('static/download.jpg'); background-repeat: no-repeat; background-size: 100% 100%; background-attachment: fixed;">
+        <h1 style="color: #ffe6ff; text-shadow: 2px 2px #FF0000; text-align: center; text-decoration: underline;"><strong>Credit Card Default Prediction</strong></h1>
+        <br>
+        <p style="font-style: italic; text-align: center; color: white;"><strong>Please fill all the fields below carefully</strong></p>
+        <form action="{{ url_for('predict')}}"method="post" style="text-align: center;">
+            
+                <label style="color: #f092f0;"><b>LIMIT BALANCE OF THE ACCOUNT</b></label>
+                <br>
+                <input type="text" name="experience" value="Balance" onfocus="this.value=''" placeholder="Experience" required="required" />
+                <br>
+                <br>
+           
+                <label style="color: #f092f0;"><b>EDUCATION QUALIFICATION OF THE ACCOUNT HOLDER</b></label>
+                <br>
+                <select name="education">
+                    <option value="1">Graduation</option>
+                    <option value="2">University</option>
+                    <option value="3">High School</option>
+                    <option value="4">others</option>
+                </select>
+                <br>
+                <br>
+                <label style="color: #f092f0;"><b>MARITAL STATUS</b></label>
+                <br>
+                <select name="mstat">
+                    <option value="1">Married</option>
+                    <option value="2">single</option>
+                    <option value="3">others</option>
+                </select>
+                <br>
+                <br>
+                <label style="color: #f092f0;"><b>AGE OF THE ACCOUNT HOLDER</b></label>
+                <br>
+                <input type="text" value="(In years)" name="Age" onfocus="this.value=''"> 
+           
+               
+            
+            <br>
+            <br>
+            <p style="font-style: italic; text-align: center; color: white;"><strong>Please enter the past 6 months Bill Amount details of the account</strong></p> 
+            <br>
+            
+                <label style="color: #ffcc66;"><b>BILL STATEMENT AMOUNT IN SEPTEMBER:  </b></label>
+                <input type="text" value="Enter numerical data" name="Agesdc" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>BILL STATEMENT AMOUNT IN AUGUST: </b></label>
+                <input type="text" value="Enter numerical data" name="Agefv" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>STATEMENT AMOUNT IN JULY: </b></label>
+                <input type="text" value="Enter numerical data" name="Agewrf" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>BILL STATEMENT AMOUNT IN JUNE: </b></label>
+                <input type="text" value="Enter numerical data " name="Agegefvcw" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>BILL STATEMENT AMOUNT IN MAY: </b></label>
+                <input type="text" value="Enter numerical data" name="Ageiowdhc" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>BILL STATEMENT AMOUNT IN APRIL: </b></label>
+                <input type="text" value="Enter numerical data" name="Ageefvcw" onfocus="this.value=''">
+                <br>
+            
+            <br>
+            
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN SEPTEMBER: </b></label>
+                <input type="text" value="Enter numerical data" name="Ageefvcs" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN AUGUST: </b></label>
+                
+                <input type="text" value="Enter numerical data" name="Ageoewfhvcj" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN JULY: </b></label>
+                
+                <input type="text" value="Enter numerical data" name="Ageefvtgrvi" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN JUNE: </b></label>
+                <input type="text" value="Enter numerical data" name="Ageevfijnv" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN MAY: </b></label>
+                
+                <input type="text" value="Enter numerical data" name="Agevijeiov" onfocus="this.value=''">
+                <br>
+                <br>
+                <label style="color: #ffcc66;"><b>AMOUNT PAID IN APRIL: </b></label>
+                
+                <input type="text" value="Enter numerical data" name="Ageoiwjrcvirev" onfocus="this.value=''">
+                <br>
+            
+            <br>
+        <!-- 
+        <input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+        <input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="fth" placeholder="Experience" required="required" />
+        <input type="text" name="tegdnd" placeholder="Test Score" required="required" />
+        <input type="text" name="intendfrview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="expesrhrience" placeholder="Experience" required="required" />
+        <input type="text" name="test_skrydscore" placeholder="Test Score" required="required" />
+        <input type="text" name="insrjnsxterview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="expeutlkrience" placeholder="Experience" required="required" />
+        <input type="text" name="test_sw4twcore" placeholder="Test Score" required="required" />
+        <input type="text" name="interwywhgsview_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="experierwgence" placeholder="Experience" required="required" />
+        <input type="text" name="test_swtr3qcore" placeholder="Test Score" required="required" />
+        <input type="text" name="intervidthbsew_score" placeholder="Interview Score" required="required" />
+        <input type="text" name="experienwtece" placeholder="Experience" required="required" />
+        -->
+         
+
+            <button type="submit" class="btn btn-primary btn-block btn-large" style="background-color: turquoise; border-radius: 40px; width: 10%; height: 40%;">Predict</button>
+           </form>
+        <br>
+        <br>
+        <div style="text-align: center; color: #ffe6ff; text-shadow: 2px 2px #FF0000; font-size: 20px; padding-bottom: 10px;">
+        {{prediction_text}}
+        </div>
+    </body>
+</html>
